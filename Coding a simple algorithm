@@ -1,0 +1,18 @@
+Number Matching Game
+
+1. complete code;;
+let randomnumber = Math.floor(Math.random()*100)+1 ;
+let expectnumber = 0 ;
+let Trials = 0 ;
+while (expectnumber !== randomnumber ) {expectnumber= Number(prompt("1부터 100까지 숫자를 입력하세요")) ; Trials++ ;
+if (Trials >=10 ) { alert("기회를 모두 소진하셨습니다. 정답은"+randomnumber+"였습니다.") ; break; }
+if (expectnumber>randomnumber) {alert("너무 커요.") ; }
+else if (expectnumber<randomnumber) {alert("너무 작아요") ;}
+else { alert("정답입니다.") ; } }
+
+
+2. project goal:   Learning Conditional statements and iteration by making a game where users try to match the number in 10 trials.
+  
+3. Challenges: It was hard to change the input strings to numbers. I can solve it by using the Number() function. The Number() function makes a string a number.
+
+4.What I learned is that console.log() doesn't show the text immediately, but alert() shows the text immediately
