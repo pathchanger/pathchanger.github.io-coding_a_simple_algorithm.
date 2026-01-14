@@ -1,0 +1,53 @@
+***Day1 Goal***;; **Today's goal is making "credit checker"** 
+ [1] Condition
+{1}  Classify the numbers that users entered into A to F.
+{2}  If the numbers that the users entered are not between 0 and 100, then alert "please enter a number between 0~100".
+{3}  If the text that the users entered is not a number, then alert "please enter a number between 0~100".
+  
+
+ 1. **<First try>**
+let inputdata = prompt("Enter your score:0~100");
+if (! 0<= inputdata <=100) {alert("please enter the number between 0~100");}
+else if(inputdata>=90){alert("A");}
+else if(inputdata>=80){alert("B");}
+else if(inputdata>=70){alert("C");}
+else if(inputdata>=60){alert("D");}
+else{alert("F")}
+
+ **Result** ;; ***Fail***
+**Mistakes, solutions, and lessons learned.**
+{1} First row ;; prompt( ) >>> Number(prompt( ) ) **Learned ;; Computers recognize the result value of the prompt to text. ** 
+{2} Second row ;; inputdat >>> inputdata / (! 0<= inputdata <=100) >>>> (! 0<= inputdata && inputdata <=100) **Learned: Computers cannot recognize more than two conditions in a single conditional statement.**
+{3} **It is too hard to describe the second and third conditions with this simple code grammar.** >>> Using **"isNaN"**
+
+ 2. **<Third try>**
+***let inputdata = prompt("Enter your score:0~100");
+let score = Number(inputdata);
+if (isNaN(score) || score < 0 || score > 100) {alert("please enter the number between 0~100");} 
+else if(score>=90){alert("A");}
+else if(score>=80){alert("B");}
+else if(score>=70){alert("C");}
+else if(score>=60){alert("D");}
+else{alert("F");}***
+
+
+  
+  **Result** : **Success**
+
+  **Important notion** : **isNaN( 'Is Not a Number' ) : Printing two different results( true and false).
+1.True: When the entered text cannot be converted to a number. 
+2.False: When the entered text is a real number or can be converted to a number.**
+
+  **What I want to improve** ;; **Minimize the code from row number 4 to row number 8.**
+
+
+ 3. <Fifth try>
+
+   
+
+
+
+
+
+
+   
