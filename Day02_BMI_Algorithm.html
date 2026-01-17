@@ -1,0 +1,71 @@
+          ***[ Day02 goal : Coding a BMI checking algorithm ]***
+              [1] Condition
+
+
+ {1} Enter height (m) and weight (kg).
+ {2} Calculate BMI (Weight/Height**2) based on the entered information.
+ {3} Analyze the user's condition based on the calculated information and output the results.
+
+
+
+1.**FIRST CHALLENGE**
+  ***let heihgit = prompt("키(m)를 입력하세요.") ; let weight = prompt("몸무게를 입력하세요(kg).");
+ let H = Number(height); let W= Number(weight);
+ let bmi = W/H**2; let BMI= Number(bmi.toFixed(1));
+ if (BMI<18.5) {alert("저체중입니다.");}
+ else if(BMI<23) {alert("정상체중입니다.");}
+ else if(BMI<25) {alert("과체중입니다.");}
+ else {alert("비만입니다.");}***
+
+
+**Result : Fail( First row ;; typo heihgit >>> height)
+**Coding grammar** : {1} `A**B` : **A to the power of B** {2} **{Variable.toFixed(x)}** : **Prints the number up to x decimal places of variable as characters.**
+**What I want to improve** : **Expressing the first line as one code.**
+
+
+2. **SECOND CHALLENGE**
+    ***let Height_Weight = prompt("키(m)"+ ","+"몸무게(kg)"+"_예시)1.73,58");
+ let H_W = Height_Weight.split(",");
+ let H= Number(H_W[0]); let W= Number(H_W[1]);
+ let bmi = W/H**2; let BMI= Number(bmi.toFixed(1));
+ if (BMI<18.5) {alert("저체중입니다.");}
+ else if(BMI<23) {alert("정상체중입니다.");}
+ else if(BMI<25) {alert("과체중입니다.");}
+ else {alert("비만입니다.");}***
+
+ **Result** : **Success**
+ ** Coding grammar ** : **Variable.split(separator) : Saves the entered variables by distinguishing them based on a separator ;; **How to print the input data?** : **Variable[n]**:Print the n+1th separated value
+ **What I want to improve** : **Replace lines 5-8 with one code**
+
+
+
+  3. **THIRD CHALLENGE**
+  ***let Height_Weight = prompt("키(m)"+ ","+"몸무게(kg)"+"_예시)1.73,58");
+ let H_W = Height_Weight.split(",");
+ let H= Number(H_W[0]); let W= Number(H_W[1]);
+ let bmi = W/H**2; let BMI= Number(bmi.toFixed(1));
+ let result = (BMI < 18.5) ? "저체중" : (BMI < 23) ? "정상" : (BMI < 25) ? "과체중" : "비만";
+alert(result);***
+ 
+**Result** : **success**
+**Coding grammar** : **Refactoring** : **Connect conditions using ? and : **
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+   
